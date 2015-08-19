@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/miniplayer"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/now_playing_ticker_height"
+    android:background="#ffffff"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/selected_thumbnail"
+        android:layout_width="@dimen/now_playing_ticker_height"
+        android:layout_height="@dimen/now_playing_ticker_height"
+
+
+        android:src="@drawable/art_default" />
+
+    <ImageView
+        android:id="@+id/player_state"
+        android:layout_width="@dimen/now_playing_ticker_height"
+        android:layout_height="@dimen/now_playing_ticker_height"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:tint="@color/my_primary_text"
+        android:src="@drawable/ic_play_arrow_24dp"
+         />
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:layout_toRightOf="@id/selected_thumbnail"
+        android:layout_toEndOf="@+id/selected_thumbnail"
+        android:layout_toLeftOf="@id/player_state"
+        android:layout_toStartOf="@+id/player_state">
+
+        <TextView
+            android:id="@+id/selected_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/nothing_playing"
+            android:textSize="20sp"
+             />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

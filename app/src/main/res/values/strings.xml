@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Streamer</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="nothing_playing">Nothing is Playing</string>
+</resources>
